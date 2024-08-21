@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BasicViewApp</string>
+    <string name="null">null</string>
 </resources>
