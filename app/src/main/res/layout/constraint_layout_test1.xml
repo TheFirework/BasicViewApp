@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/block1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="block1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/block2"
+        android:layout_width="150dp" android:gravity="center"
+        android:layout_height="200dp"
+        android:background="@color/colorSuccess"
+        android:text="block2"
+        app:layout_constraintBottom_toBottomOf="@+id/block1"
+        app:layout_constraintEnd_toStartOf="@+id/block1" />
+
+    <TextView
+        android:id="@+id/block3"
+        android:layout_width="50dp"
+        android:layout_height="50dp" android:gravity="bottom"
+        android:background="@color/colorSuccess"
+        android:text="block3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block1"
+        app:layout_constraintLeft_toRightOf="@+id/block1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
